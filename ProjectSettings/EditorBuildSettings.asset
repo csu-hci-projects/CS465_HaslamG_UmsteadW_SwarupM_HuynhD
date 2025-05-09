@@ -6,17 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/My scenes/SampleScene.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/My scenes/Baseline.unity
-    guid: 22808620da69bfd4e815994af4c85d43
-  - enabled: 1
-    path: Assets/enviroment testing.unity
-    guid: a50157dd484f29a4697767d288d5b5d8
-  - enabled: 1
-    path: Assets/buttonscene.unity
-    guid: 01e851bd80b622741bdef3fcffa0d9b4
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ce57b742c23db4b439ede57131703276,
       type: 2}

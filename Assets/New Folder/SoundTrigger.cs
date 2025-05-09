@@ -1,31 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SoundTrigger : MonoBehaviour
 {
+
     private AudioSource audio;
-
-    public string sceneToLoad = "Baseline";
-
+    // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
     }
 
+    // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("GameController"))
+        if (other.CompareTag("Hand") || other.CompareTag("GameController"))
         {
             audio.Play();
-            StartCoroutine(PlaySoundThenChangeScene());
         }
-    }
-
-    private IEnumerator PlaySoundThenChangeScene()
-    {
-        yield return new WaitForSeconds(audio.clip.length);
-        SceneManager.LoadScene("Baseline");
     }
 }
